@@ -1,0 +1,82 @@
+/*!
+ \mainpage Robotic vehicle API Documentation main Page
+ \tableofcontents
+
+\section intro Introduction
+
+Referencies to other pages:
+
+- \subpage implementation (pøíkaz subpage)
+- \ref testing (pøíkaz ref)
+
+ \section pstr Project structure
+
+ On this picture there are relations between program modules. Blocks are clickable.
+
+  \dot
+  digraph example {
+      node [shape=record, fontname=Sans, fontsize=11];
+      fw [ label="FWLib (STM32)"];
+      sp [ label="Support" URL="\ref Support"];
+      mh [ label="MotorHW" URL="\ref MotorHW"];
+      mc [ label="MotorControl" URL="\ref MotorControl"];
+      sp -> fw [ arrowhead="open", style="dashed" ];
+      mh -> fw [ arrowhead="open", style="dashed" ];
+      mh -> sp [ arrowhead="open", style="dashed" ];
+      mc -> mh [ arrowhead="open", style="dashed" ];
+      mc -> sp [ arrowhead="open", style="dashed" ];
+  }
+  \enddot
+
+
+
+\section sps Simple project structure
+\section tips Tips
+\section lic License
+
+
+Brno, Lukáš Otava 2015
+ */
+
+/*!
+ \page implementation Introduction to implementation
+
+ \bug Tady je zásadní chyba
+
+ \section sbs Zrušení zkøížených vazeb
+
+This page introduces the user to the topic.
+Now you can proceed to the \ref testing.
+
+*/
+
+//-----------------------------------------------------------
+
+/*! \page testing Testing
+This page is for advanced users.
+
+ subpage npage
+
+Make */
+
+/*! \page npage Nová stránka
+\tableofcontents
+ *  tak tady si píšu na novou stránku
+ *
+ * \section mca Motor control algorithm
+ *	Tady máme novou sekci stránky .-)
+ *
+ * #define Q31_FORMAT(i) ((q31_t)((0x7FFFFFFF)*(i)))
+ *
+ *
+ */
+
+
+/* \file main.h
+ * \author Lukas Otava
+ * \date 2014
+ * \defgroup Main application file
+ *
+ *  Common defs.
+ *
+ * */

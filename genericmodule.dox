@@ -1,0 +1,39 @@
+
+/*! 
+\defgroup GenericModule GenericMod Module
+@{
+
+\brief Test module brief description
+\author Lukas Otava
+\date 2015
+
+Tento modul slouží k testování generování dokumentace
+
+> This is a block quote
+> spanning multiple lines
+
+- ahoj
+ -# s cislem 1
+ -# s cislem 2
+- dalsi
+
+[odkaz na sekci] (@ref testing)
+
+[odkaz na funkci @ref SpeedPosEstimator] (@ref SpeedPosEstimator)
+
+[odkaz na strukturu @ref alphabeta] (@ref alphabeta)
+
+*/
+
+/*!
+fn void SpeedPosEstimator(const alphabeta *rtu_i_meas, const alphabeta *rtu_u_action, real32_T *rty_sin, real32_T *rty_cos, real32_T *rty_speed,   DW_SpeedPosEstimator_f_T *localDW)
+
+brief Read bytes from a file descriptor.
+param rtu_i_meas Mìøené proudy v alphabeta souøadnicích
+param rtu_u_action Napìtí na motoru v alphabeta souøadnicích
+*/
+
+/*!
+}@
+*/
+
