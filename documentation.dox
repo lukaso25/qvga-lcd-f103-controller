@@ -1,5 +1,5 @@
 /*!
- \mainpage Robotic vehicle API Documentation main Page
+ \mainpage API Documentation main Page
  \tableofcontents
 
 \section intro Introduction
@@ -18,13 +18,10 @@ Referencies to other pages:
       node [shape=record, fontname=Sans, fontsize=11];
       fw [ label="FWLib (STM32)"];
       sp [ label="Support" URL="\ref Support"];
-      mh [ label="MotorHW" URL="\ref MotorHW"];
-      mc [ label="MotorControl" URL="\ref MotorControl"];
+      mh [ label="module" URL="\ref mod"];
       sp -> fw [ arrowhead="open", style="dashed" ];
       mh -> fw [ arrowhead="open", style="dashed" ];
       mh -> sp [ arrowhead="open", style="dashed" ];
-      mc -> mh [ arrowhead="open", style="dashed" ];
-      mc -> sp [ arrowhead="open", style="dashed" ];
   }
   \enddot
 
@@ -35,7 +32,7 @@ Referencies to other pages:
 \section lic License
 
 
-Brno, Lukáš Otava 2015
+Brno, Lukáš Otava 2016
  */
 
 /*!
@@ -43,7 +40,7 @@ Brno, Lukáš Otava 2015
 
  \bug Tady je zásadní chyba
 
- \section sbs Zrušení zkøížených vazeb
+ \section sbs 
 
 This page introduces the user to the topic.
 Now you can proceed to the \ref testing.
@@ -61,20 +58,18 @@ Make */
 
 /*! \page npage Nová stránka
 \tableofcontents
- *  tak tady si píšu na novou stránku
+ *  
  *
- * \section mca Motor control algorithm
+ * \section mca mca
  *	Tady máme novou sekci stránky .-)
- *
- * #define Q31_FORMAT(i) ((q31_t)((0x7FFFFFFF)*(i)))
  *
  *
  */
 
 
-/* \file main.h
+/*! \file main.h
  * \author Lukas Otava
- * \date 2014
+ * \date 2016
  * \defgroup Main application file
  *
  *  Common defs.
